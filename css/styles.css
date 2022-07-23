@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+body{
+    background-color: rgb(173, 162, 150, 0.5);
+    font-family: 'Nobile', sans-serif;
+}
+.menuNav{
+    border-bottom: 2px solid rgb(0,0,0,0.5);
+    }
+ul li, a{
+    text-decoration: none;
+    color: rgb(244, 244, 244, 0.8);
+    
+    }
+    li:hover{
+        color: rgb(136, 162, 170);
+    }
+#logo{
+    border-radius: 85%;
+    }
+    footer p{
+        margin-left: 20px;
+    }
+    footer p a{
+        color: #0f1a20;
+    }
+    /*view mobile*/
+@media screen and (min-width: 320px){
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.6);
+        width: 108%;
+        margin-left: 1px;
+    }
+
+
+    .menuNav ul{
+        font-size: xx-small;
+        display: flex;
+        list-style: none;
+        margin-right: 50px;
+    }
+    .menuNav li{
+        margin-right: 5px;
+    }
+    .menuNav ul li a{
+        display: block;
+    }
+    .encontranos ul{
+        display: none;
+    }
+    .encontranos:hover ul{
+        display:block
+    }
+    #logo{
+        border-radius: 80%;
+        width: 78px;
+        height: 70px;
+      }
+      footer{
+        border-top: 2px solid rgb(0, 0, 0, 0.5);
+    }    
+    /*index*/
+      #trago{
+        width: 157px;
+        height: 207px;
+        box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.6);
+    }
+    #trago2{
+        margin-left: 20px;
+        width: 280px;
+        height: 360px;
+        box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.6);
+    }
+    .section h1, h2{
+        font-size: medium;
+        text-align: center;
+    }
+    .section h1{
+        margin-top: 20px;
+    }
+    .aside p{
+        font-size: small;
+    }
+    .asideI{
+        border-top: 2px solid rgb(0, 0, 0, 0.5);
+        width: 330px;
+        margin-left: 20px;
+        padding-top: 25px;
+    }
+    .asideI p{
+        font-size: medium;
+        display:block;
+        position: absolute;
+        left: 190px;
+        bottom: 185px;
+        width: 130px;
+    }
+    /*sobre-nosotros*/
+    .sectionS{
+        display: block;
+    }
+    .titulos{
+        margin-top: 10px;
+        font-size: medium;
+        text-align: center;
+    }
+    .textoS{
+        width: 85%;
+        text-align: justify;
+        margin-left: 20px;
+    }
+    #fotoS{
+        width: 87%;
+        height: 50%;
+        margin-left: 20px;
+        box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.6);
+    }
+    }
+    /* tablet view*/
+    @media screen and (min-width: 768px ){
+        .menuNav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.6);
+        }
+        .menuNav ul{
+            font-size:medium;
+            display: flex;
+            list-style: none;
+            margin-right: 150px;
+        }
+        .menuNav li{
+            margin-left: 20px;
+        }
+        .menuNav ul li a{
+            display: block;
+        }
+        .encontranos ul{
+            display: none;
+        }
+        .encontranos:hover ul{
+            display:block
+        }
+        #logo{
+            margin: 15px 0px 15px 15px;
+            width: 20%;
+            height: 20%;
+        }
+        footer{
+            border-top: 2px solid rgb(0, 0, 0, 0.5);
+        }
+        /*index*/
+        #trago{
+            width: 290px;
+            height: 360px;
+            margin-left: 20px;
+        }
+        #trago2{
+            margin-left: 20px;
+            width: 310px;
+            height: 400px;
+        }
+        .section{
+            margin-left: 30px;
+        }
+        .section h1, h2{
+            text-align: center;
+            font-size: large;
+        }
+        .asideI{
+            border: none;
+            border-left: 2px solid rgb(0, 0, 0, 0.5);
+            margin-top: 35px;
+            padding-left: 30px;
+        }
+        .asideI p{
+            width: 290px;
+            position: relative;
+            top: 1px;
+            left: 25px;
+            margin-right: 200;
+            font-size: medium;
+            padding-bottom: 20px;
+        }
+        main{
+            display: flex;
+        }
+        /*sobre-nosotros*/
+        .sectionS{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .textoS{
+        margin-right: 30px;
+        font-size: large;
+    }
+    .titulos{
+        margin-top: 20px;
+        font-size: larger;
+    }
+     #fotoS{
+        margin-top: 15px;
+        margin-left: 50px;
+     }   
+    }
+    @media screen and (min-width: 1024px) {
+        #logo{
+            width: 25%;
+            height: 25%;
+        }
+        li{
+            font-size: larger;
+        }
+        /*index*/
+        #trago2{
+            margin-left: 50px;
+            width: 400px;
+            height: 520px;
+        }
+        #trago{
+            width: 380px;
+            height: 470px;
+        }
+        .asideI{
+            margin-left: 80px;
+            padding-left: 30px;
+        }
+        .asideI p{
+            font-size: large;
+            width: 400px;
+            margin-top: 25px;
+        }
+        .section h1, h2{
+            font-size: x-large;
+            text-align: center;
+        }
+        /*sobre-nosotros*/
+        #fotoS{
+            width: 70%;
+            height:70%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .textoS{
+            font-size: larger;
+        }
+        .titulos{
+            font-size: x-large
+        }
+
+    }
+
+    
+
+
+
+body{
+background-image:linear-gradient(45 deg, #394246, #252f34, #0f1a20, #2c1d1d, #491f19, #822312);
+background-size:400%;
+animation: bg-animation 5s infinite alternate;
+}
+@keyframes bg-animation{
+    0%{background-position: left;
+    }
+    100%{background-position:right;
+}
+}
